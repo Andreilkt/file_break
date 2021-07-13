@@ -12,22 +12,33 @@ def read2list(file):
     return lines1
 
 lines2 = read2list('read_1.txt')
+rows = len(lines2)
+print("Количество строк в списке")
+print(rows)
+
+print("Неразделеный список")
 print(lines2)
+
 print(type(lines2))
 sl = lines2[0:4]
+print("Список 1")
 print(sl)
 with open('wr1.txt', 'w') as filehandle:
     for listitem in sl:
         filehandle.writelines(listitem)
 sz = os.stat('read_1.txt').st_size
+
 print(sz)
 sl1 = lines2[5:]
+print("Список 2")
 print(sl1)
 with open('wr2.txt', 'w') as filehandle:
     for listitem1 in sl1:
         filehandle.writelines(listitem1)
 sz1 = os.stat('read_1.txt').st_size
 print(sz1)
+
+
 
 
 
