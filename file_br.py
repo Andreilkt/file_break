@@ -2,7 +2,7 @@ from pathlib import Path
 import os
 # читает файл в список
 def read2list(file):
-    global lines
+    # global lines
     # открываем файл в режиме чтения utf-8
     file = open(file, 'r', encoding='utf-8')
     # читаем все строки и удаляем переводы строк
