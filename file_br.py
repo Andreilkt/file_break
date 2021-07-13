@@ -30,3 +30,5 @@ sz1 = os.stat('read_1.txt').st_size
 print(sz1)
 
 
+
+
